@@ -49,7 +49,13 @@ body {
 .button-filter:hover {
   background: var(--color1);
   color: var(--color4);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+}
+
+.icon-team:focus,
+.icon-team:hover {
+  color: var(--color4);
 }
 
 ul {
@@ -155,10 +161,17 @@ h1,h2,h3,p {
 }
 
 .hat-section {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   background: var(--color6);
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../Image/Imghead.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hat-title {
@@ -196,6 +209,7 @@ button {
 .advances-content{
   display: flex;
 }
+
 
 .advances-content .advances-item + .advances-item {
   margin-left: 30px;
@@ -285,6 +299,8 @@ padding-top: 0;
 .team-container {
   padding-top: 30px;
   padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -299,6 +315,7 @@ padding-top: 0;
 }
 
 .team-text {
+  margin-bottom: 16px;
 
   font-size: var(--font-size2);
   color: var(--color2);
@@ -427,4 +444,13 @@ padding-top: 0;
   border: 1px solid var(--color8)
 }
 
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  min-height: 120px;
+  background: var(--color7);
+  border-radius: 4px;
+}
 
